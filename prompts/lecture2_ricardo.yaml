@@ -1,0 +1,49 @@
+# Review prompts for Lecture 2 - Ricardian Model
+# Source: "Lecture 2 - Ricardo.pptx" (HA International Trade, fall 2026)
+#
+# Schema (v0, see issue #1):
+#   lecture: lecture number
+#   title:   lecture title shown on the review page
+#   color:   orbit-reviewarea accent color
+#   prompts: list of {q, a}; Markdown and $...$ / $$...$$ LaTeX are supported.
+
+lecture: 2
+title: "Lecture 2 — The Ricardian Model"
+color: blue
+
+prompts:
+  - q: "What single principle determines the pattern of international trade in the Ricardian model?"
+    a: "**Comparative advantage** — each country exports the good for which its *opportunity cost* of production is lower."
+
+  - q: "Define *comparative advantage*."
+    a: "A country has a comparative advantage in a good when its **opportunity cost** of producing that good is lower than in the other country."
+
+  - q: "Define *absolute advantage*. Does it predict the trade pattern or the wage level?"
+    a: "Having the best technology (highest $MPL$) for a good. It predicts **wage levels** — it has nothing to do with the pattern of trade."
+
+  - q: "In the Ricardian model (wheat on the horizontal axis, cloth on the vertical), what is the slope of the PPF?"
+    a: "$-MPL_C/MPL_W$: the negative of the opportunity cost of wheat measured in cloth. With $MPL_W = 4$, $MPL_C = 2$ the slope is $-1/2$."
+
+  - q: "Why does the wage equal $P \\cdot MPL$ in each industry under perfect competition?"
+    a: "An extra worker produces $MPL$ units worth $P$ each. A higher wage would make production unprofitable; a lower wage would be bid up by competing producers."
+
+  - q: "Derive the autarky relative price of wheat from wage equalization across industries."
+    a: "$w = P_W \\, MPL_W = P_C \\, MPL_C \\;\\Rightarrow\\; P_W/P_C = MPL_C/MPL_W$ — the opportunity cost of wheat, i.e. the slope of the PPF."
+
+  - q: "Home: $MPL_W = 4$, $MPL_C = 2$. Foreign: $MPL_W^* = 1$, $MPL_C^* = 1$. Which country has the comparative advantage in wheat, and why?"
+    a: "Home: its opportunity cost of wheat is $1/2$ yard of cloth versus $1$ in Foreign — even though Home has an *absolute* advantage in **both** goods."
+
+  - q: "Between which bounds must the free-trade relative price of wheat lie?"
+    a: "Between the two autarky relative prices. In our example: $1/2 \\le P_W/P_C \\le 1$."
+
+  - q: "What are the two lessons of the Ricardian model?"
+    a: "1. The pattern of trade is determined by **comparative advantage**. 2. There are **gains from trade** for both countries."
+
+  - q: "Under trade with $P_W/P_C = 2/3$ and $MPL_W = 4$, what is the Home real wage in terms of cloth? Compare it with autarky."
+    a: "$(P_W/P_C) \\times MPL_W = (2/3) \\times 4 = 8/3$ yards of cloth — higher than the autarky real wage of $MPL_C = 2$ yards, so workers gain from trade."
+
+  - q: "Define the *terms of trade*."
+    a: "The price of a country's exports divided by the price of its imports. For Home, which exports wheat: $P_W/P_C$."
+
+  - q: "What did mercantilists believe about trade, and what did Ricardo show?"
+    a: "Mercantilists: exporting is good (gold flows in), importing is bad — so impose high tariffs. Ricardo: **all** trading partners can gain from free trade, without tariffs."
