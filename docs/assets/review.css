@@ -1,0 +1,84 @@
+body {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.55;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+h1 { font-size: 1.5rem; }
+a { color: #0b62a4; }
+
+.howto {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.92rem;
+}
+
+.srs-progress {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+
+.srs-card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.srs-question { font-weight: 600; }
+
+.srs-answer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #d5d5d5;
+}
+
+.srs-actions {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.srs-actions button {
+  font-size: 0.95rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+.srs-actions button:hover { background: #f2f2f2; }
+
+.srs-reveal, .srs-practice {
+  background: #0b62a4 !important;
+  color: #fff;
+  border-color: #0b62a4 !important;
+}
+.srs-reveal:hover, .srs-practice:hover { background: #094e83 !important; }
+
+.srs-grade { display: flex; flex-direction: column; align-items: center; min-width: 4.2rem; }
+.srs-iv { font-size: 0.72rem; color: #999; }
+.srs-again { border-color: #c0392b !important; color: #c0392b; }
+.srs-hard  { border-color: #d68910 !important; color: #d68910; }
+.srs-good  { border-color: #1e8449 !important; color: #1e8449; }
+.srs-easy  { border-color: #2471a3 !important; color: #2471a3; }
+
+.srs-done p:first-child { color: #1e8449; }
+
+footer {
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
