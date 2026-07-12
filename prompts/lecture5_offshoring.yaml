@@ -1,0 +1,57 @@
+# Review prompts for Lecture 5 - Offshoring
+# Source: "Lecture 5 - Offshoring.pptx" (HA International Trade, fall 2026)
+#
+# Schema v1: see prompts/lecture2_ricardo.yaml.
+
+lecture: 5
+title: "Lecture 5 — Offshoring"
+color: red
+
+prompts:
+  - type: definition
+    q: "Define *offshoring*."
+    a: "The provision of a service or the production of parts of a good in **different countries**, then used or assembled into a final good elsewhere — i.e. **trade in intermediate inputs** (also called foreign outsourcing)."
+
+  - type: why
+    q: "In what sense is offshoring similar to immigration?"
+    a: "Firms can **employ foreign workers** even though those workers never leave their own country."
+
+  - type: why
+    q: "What happened to the relative wage of nonproduction (skilled) workers in the US and in Mexico in the 1980s, and why is that a puzzle?"
+    a: "It **rose in both countries**. The HO model predicts opposite movements: up in skill-abundant US, **down** in skill-scarce Mexico — so HO cannot explain the pattern."
+
+  - type: discrimination
+    q: "Why does the Heckscher-Ohlin model fail to explain the 1980s US-Mexico relative-wage facts, and which model succeeds?"
+    a: "HO predicts each country's **scarce factor loses** — skilled wages should fall in Mexico. The **offshoring model** succeeds: the relocated mid-chain activities raise the relative demand for skill in **both** countries."
+
+  - type: definition
+    q: "In the offshoring model, how is the firm's value chain ordered, and what is *skill intensity*?"
+    a: "Activities are ordered by **skill intensity** — how much high-skilled labor is needed relative to low-skilled labor in each activity."
+
+  - type: why
+    q: "Why is there a single threshold on the value chain separating offshored from home activities?"
+    a: "The relative wage of low-skilled labor is **lower in Foreign**, while the extra costs of capital and trade are **uniform across activities** — so all activities below a cutoff skill intensity are cheaper in Foreign, and all above it cheaper at Home."
+
+  - type: why
+    q: "Offshoring costs fall and the threshold moves from A to B. Why does the relative demand for skilled labor rise in **both** countries?"
+    a: "The newly offshored activities between A and B are the **least skill-intensive of those formerly done at Home** but the **most skill-intensive of those done in Foreign** — so the average skill intensity rises in both countries."
+
+  - type: calculation
+    q: "Home becomes more productive: every intermediate input needs fewer workers of both types. What happens to the offshoring threshold and to relative skilled wages?"
+    a: "The threshold shifts **left** (Home takes on more relatively low-skill activities, Foreign likewise). The relative wage of high-skill workers **declines in both countries**."
+
+  - type: definition
+    q: "In the simplified gains-from-offshoring model, what are the two activities and their factor intensities?"
+    a: "**Components production** (unskilled-labor-intensive) and **R&D** (skilled-labor-intensive), with equal capital costs across the two."
+
+  - type: discrimination
+    q: "What is an *isoquant*, and how does it differ from an indifference curve in the gains-from-trade diagrams?"
+    a: "An isoquant is the set of input combinations giving the firm the **same output**, whereas an indifference curve gives the consumer the same **utility** — the offshoring gains analysis replaces consumers with the firm."
+
+  - type: why
+    q: "How are the gains from offshoring measured in the two-activity model, and why do they arise?"
+    a: "By the output increase $Y_1 - Y_0$: offshoring components makes them relatively **cheaper**, so the firm produces more final output with the **same Home labor** — it becomes more productive, costs and prices fall, and the gains spread to consumers. Gains exist whenever the world relative price differs from Home's."
+
+  - type: why
+    q: "Who gains and who may lose from offshoring among Home workers?"
+    a: "**Skilled workers gain** (relative demand for skill rises). For **unskilled workers the effect is ambiguous**: their relative wage falls, but prices fall too — the outcome depends on which effect is larger."

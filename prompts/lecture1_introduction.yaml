@@ -1,0 +1,59 @@
+# Review prompts for Lecture 1 - Introduction / Trade in the Global Economy
+# Source: "Lecture 1 - Introduction.pptx" (HA International Trade, fall 2026)
+#
+# Schema v1: see prompts/lecture2_ricardo.yaml. Lecture 1 is an
+# introductory/historical lecture, so the mix leans on definition/why cards
+# rather than calculations.
+
+lecture: 1
+title: "Lecture 1 — Introduction: Trade in the Global Economy"
+color: green
+
+prompts:
+  - type: definition
+    q: "How is a country's *trade relative to GDP* computed in the course's opening tables?"
+    a: "$\\text{(Imports + Exports)}/2$ divided by GDP, including both merchandise goods and services."
+
+  - type: why
+    q: "Why is the period 1890 to World War I called the **first golden age** of international trade?"
+    a: "Dramatic improvements in transportation — the **steamship** and the **railroad** — allowed a great increase in international trade."
+
+  - type: definition
+    q: "What was the *Smoot-Hawley Tariff Act*, and what did it trigger abroad?"
+    a: "A 1930 US law raising tariffs to as high as **60%** on many import categories. Canada retaliated with high tariffs of its own, and France restricted US imports with quotas."
+
+  - type: definition
+    q: "Define an *import quota*."
+    a: "A limitation on the **quantity** of an imported good allowed into a country."
+
+  - type: why
+    q: "What launched the **second golden age** of trade after World War II?"
+    a: "Tariff reductions under the **General Agreement on Tariffs and Trade (GATT)** together with improved transportation costs."
+
+  - type: definition
+    q: "Define *offshoring*, the candidate 'third golden age' of trade."
+    a: "The components of a good or service are **produced in several countries** — international fragmentation of production, i.e. trade in intermediate goods, enabled by the ICT revolution and air cargo."
+
+  - type: discrimination
+    q: "A tariff and a quota both restrict imports. What is the basic difference between the two instruments?"
+    a: "A **tariff** is a tax on imports (raises the import price); a **quota** is a limit on the import **quantity**."
+
+  - type: why
+    q: "What changed in China after Nixon's 1972 visit, and what followed?"
+    a: "Reforms and **opening to international trade** — the start of China's move toward a (somewhat) market-oriented economy and its subsequent incredible growth."
+
+  - type: why
+    q: "What happened to extreme poverty worldwide during the recent globalization decades?"
+    a: "The share of world population below \\$1.90 a day fell from about **43% in 1981 to 9% in 2017**; in China from 66% (1990) to 0.5% (2016)."
+
+  - type: definition
+    q: "What are the three big questions of the international-trade part of the course?"
+    a: "**Why** do countries (or firms) trade? **What** do they trade? **Who** benefits and who loses from trade?"
+
+  - type: why
+    q: "What is the popular claim about globalization and manufacturing jobs in high-income countries?"
+    a: "That poorer economies have **taken millions of manufacturing jobs** from high-income countries — a claim the course's models and evidence let us evaluate."
+
+  - type: why
+    q: "According to the course introduction, what is the point of learning trade models?"
+    a: "To **make sense of real-world events**, distinguish plausible claims from nonsense, and evaluate each claim with evidence."

@@ -1,0 +1,63 @@
+# Review prompts for Lecture 4 - Trade and Resources: The Heckscher-Ohlin Model
+# Source: "Lecture 4 - HO.pptx" (HA International Trade, fall 2026)
+#
+# Schema v1: see prompts/lecture2_ricardo.yaml.
+
+lecture: 4
+title: "Lecture 4 — The Heckscher-Ohlin Model"
+color: purple
+
+prompts:
+  - type: definition
+    q: "According to the Heckscher-Ohlin model, **why** does trade occur?"
+    a: "Because countries have **different resources** (factor endowments) — not different technologies."
+
+  - type: discrimination
+    q: "Why is the specific-factors model called *short-run* and the Heckscher-Ohlin model *long-run*?"
+    a: "In the specific-factors model capital and land **cannot move** between industries; in the HO model **all factors are mobile** across industries."
+
+  - type: definition
+    q: "With shoes ($S$) and computers ($C$), what does it mean that shoe production is *labor-intensive*?"
+    a: "$L_S/K_S > L_C/K_C$ at **any** wage-rental ratio: shoes use more labor per unit of capital than computers."
+
+  - type: notation
+    q: "Write the condition for Foreign to be *labor-abundant* relative to Home."
+    a: "$L^*/K^* > L/K$ — Foreign's endowment ratio of labor to capital exceeds Home's (equivalently, Home is capital-abundant)."
+
+  - type: discrimination
+    q: "What determines comparative advantage in the HO model versus the Ricardian and specific-factors models?"
+    a: "In HO, technologies are **identical across countries** and comparative advantage comes from **factor endowments**; in the earlier models it comes from **technology differences**."
+
+  - type: why
+    q: "Home is capital-abundant and computers are capital-intensive. What does Home's PPF look like, and why?"
+    a: "The PPF is **skewed toward computers**: Home's endowment mix is relatively suited to the capital-intensive good, so it can produce relatively more computers."
+
+  - type: definition
+    q: "State the **Heckscher-Ohlin theorem**."
+    a: "Each country exports the good that uses its **abundant factor intensively** — e.g. capital-abundant Home exports capital-intensive computers, labor-abundant Foreign exports labor-intensive shoes."
+
+  - type: definition
+    q: "State the **Stolper-Samuelson theorem**."
+    a: "In the long run, an increase in the relative price of a good raises the **real earnings of the factor used intensively** in producing it and **lowers the real earnings of the other factor**."
+
+  - type: notation
+    q: "Write the *magnification effect* for an increase in the relative price of the capital-intensive good."
+    a: "$\\Delta R/R > \\Delta P_C/P_C > 0 > \\Delta W/W$ — factor-price changes are **larger** than the goods-price change, in opposite directions by factor intensity."
+
+  - type: why
+    q: "Trade raises the relative price of computers in capital-abundant Home. Explain the mechanism by which the real wage falls and the real rental rises."
+    a: "Home shifts toward computers, so the relative demand for labor **falls** and $W/R$ drops; firms in **both** industries then use more labor per machine, so $MPK$ rises and $MPL$ falls — the real rental rises and the real wage falls in terms of both goods."
+
+  - type: calculation
+    skill: "Apply the HO and Stolper-Samuelson theorems to a two-country example"
+    variants:
+      - q: "Denmark and China trade. Factors: robots and labor; Denmark is robot-abundant. Goods: pharmaceuticals (robot-intensive) and raw materials (labor-intensive). Who exports what, and which factors gain and lose?"
+        a: "By HO, Denmark exports **pharmaceuticals** and imports raw materials. By Stolper-Samuelson, **robot owners in Denmark gain, Danish workers lose**; in China workers gain and robot owners lose."
+      - q: "Home is capital-abundant, Foreign is labor-abundant. Goods: machinery (capital-intensive) and textiles (labor-intensive). Under free trade, who exports what, and which factors gain and lose in each country?"
+        a: "Home exports **machinery**, Foreign exports **textiles**. Capital owners gain and workers lose in Home; workers gain and capital owners lose in Foreign."
+      - q: "Two countries open to trade under HO assumptions. Which factor in which country is the classic *loser*, and why?"
+        a: "Each country's **scarce factor** loses: trade lowers the relative price of the good using it intensively, and by Stolper-Samuelson its real earnings fall more than proportionally."
+
+  - type: why
+    q: "The US opened to trade in the 1980s and income inequality rose. Why is this consistent with Stolper-Samuelson — and what competing explanation must be considered?"
+    a: "The US is **skill/capital-abundant**, so trade raises the real earnings of its abundant factor and depresses the scarce (low-skill) one, widening inequality. But **technology** (digitalization and automation, accelerating in the same decades) could produce the same pattern."

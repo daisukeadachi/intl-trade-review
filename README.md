@@ -66,8 +66,12 @@ python3 scripts/build_pages.py
 
 ## Status
 
-- Lecture 2 (Ricardian model): 12 prompts (2 of them variant cards with 3
-  variants each), page generated and verified.
+- Prompts drafted for all six planned lectures (75 cards total): Lecture 1
+  Introduction (12), Lecture 2 Ricardo (12, incl. 2 variant cards), Lecture 3
+  Specific Factors (13, incl. 1 variant card), Lecture 4 Heckscher-Ohlin
+  (12, incl. 1 variant card), Lecture 5 Offshoring (12), Lecture 9 Tariffs
+  and Quotas with Imperfect Competition (14). All pages generated and
+  verified (autotest + math-rendering screenshots).
 - Pooled review page (`all.html`) generated and verified; linked from the index.
 - The Orbit outlet is non-functional upstream (`api.withorbit.com` TLS cert
   lapsed ~May 2026, see issue #2); the self-hosted outlet above replaces it.

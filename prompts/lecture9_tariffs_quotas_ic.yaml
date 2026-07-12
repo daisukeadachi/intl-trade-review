@@ -1,0 +1,66 @@
+# Review prompts for Lecture 9 - Tariffs and Quotas with Imperfect Competition
+# Source: "Lecture 9 - Tariffs and Quotas with IC.pptx" (HA International Trade,
+# fall 2026)
+#
+# Schema v1: see prompts/lecture2_ricardo.yaml.
+
+lecture: 9
+title: "Lecture 9 — Tariffs and Quotas with Imperfect Competition"
+color: teal
+
+prompts:
+  - type: why
+    q: "Why do the effects of trade policies differ under imperfect competition?"
+    a: "Because tariffs and quotas change the Home monopolist's **market power** — the extent to which it can choose its price — and they change it differently."
+
+  - type: why
+    q: "Under free trade in a small country, why does a Home monopolist behave like a competitive firm?"
+    a: "It cannot price above the fixed world price $P_W$ without losing all customers to imports, so it faces a **flat demand curve** at $P_W$ (marginal revenue $= P_W$) and earns zero monopoly profit."
+
+  - type: definition
+    q: "What is the *pro-competitive effect* of trade?"
+    a: "Opening to imports eliminates the Home monopolist's market power: it must price at the world price and its monopoly profit disappears."
+
+  - type: why
+    q: "With a tariff $t$ under Home monopoly, what price does the monopolist charge and why?"
+    a: "$P_W + t$ and no higher: the import supply curve shifts up by $t$, so the monopolist still competes against imports and behaves **like a competitive industry** at the tariff-inclusive price."
+
+  - type: calculation
+    q: "Welfare accounting of a tariff in a small country (areas $a,b,c,d$): what happens to consumer surplus, producer surplus, government revenue, and net welfare?"
+    a: "Consumer surplus $-(a+b+c+d)$; producer surplus $+a$; government revenue $+c$; net Home welfare $-(b+d)$ (the two deadweight triangles)."
+
+  - type: why
+    q: "With a quota of $M_2$ under Home monopoly, what demand does the monopolist face, and why can it charge more than $P_W + t$?"
+    a: "It faces the residual demand $D - M_2$: once the quota is filled, **only the monopolist can sell**, so it regains market power, sets $MR = MC$, and charges $P_3 > P_W + t$."
+
+  - type: discrimination
+    q: "Tariff versus quota with the same import volume: when are they equivalent, and when is the quota strictly worse for Home?"
+    a: "Equivalent under **perfect competition**. Under **Home monopoly** the quota is worse: it restores the monopolist's market power and leads to a higher Home price than the equivalent tariff (also: quota rents may be captured by foreigners or dissipated by rent seeking)."
+
+  - type: why
+    q: "An anti-dumping duty $t$ is imposed on a Foreign monopolist. Why does the Home price rise by **less** than $t$, and what is the welfare implication?"
+    a: "The duty raises the exporter's marginal cost to $MC^* + t$; the profit-maximizing exporter absorbs part of it, so its **net-of-tariff price falls** ($P_3 < P_1$) — a **terms-of-trade gain** $e$ for Home. Net Home welfare changes by $+(e - d)$, which can be **positive**."
+
+  - type: definition
+    q: "When is an imported product said to be *dumped*?"
+    a: "When its price is **lower than the price in the exporter's own local market**."
+
+  - type: why
+    q: "Explain how dumping can arise from ordinary profit maximization rather than 'unfair' behavior."
+    a: "A **discriminating monopoly** sets $MR = MR^* = MC^*$ across its two markets. Facing a flatter (more elastic) demand abroad than at home, its optimal export price is **below its local price** — price discrimination, not an unfair practice."
+
+  - type: definition
+    q: "What does the WTO rule allow an importing country to do about dumping?"
+    a: "Apply an **anti-dumping tariff** when a foreign firm dumps its product — e.g. the EU's duties on shoe imports from China and Vietnam."
+
+  - type: why
+    q: "What are the two potentially valid justifications for *infant industry protection*, and what must underlie both?"
+    a: "(1) A tariff today raises output so the firm **learns and lowers its own future costs**; (2) today's output generates **knowledge spillovers** that lower costs for other firms. Both require some form of **market failure** — otherwise private markets would finance the learning."
+
+  - type: calculation
+    q: "In the infant-industry diagram, what is the welfare cost of protection today and the potential gain tomorrow?"
+    a: "Today the tariff costs the usual deadweight loss $-(b+d)$. If learning shifts average cost down enough, the industry later produces at the world price **without protection**, earning producer surplus $e$ — protection pays iff the future gain outweighs today's loss."
+
+  - type: discrimination
+    q: "Your government will restrict imports and asks: tariff or quota? What do you advise, and why?"
+    a: "A **tariff**: for the same import volume a quota is worse when it triggers rent seeking, when foreign exporters capture the quota rents (as with voluntary export restraints), and when the Home market is a monopoly — the quota lets the monopolist raise its price above the tariff-equivalent level."

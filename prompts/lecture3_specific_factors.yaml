@@ -1,0 +1,68 @@
+# Review prompts for Lecture 3 - Gains and Losses from Trade in the
+# Specific-Factors Model
+# Source: "Lecture 3 - Specific Factors.pptx" (HA International Trade, fall 2026)
+#
+# Schema v1: see prompts/lecture2_ricardo.yaml.
+
+lecture: 3
+title: "Lecture 3 — The Specific-Factors Model"
+color: orange
+
+prompts:
+  - type: definition
+    q: "In the specific-factors model, which factors are specific and which are mobile?"
+    a: "**Land** is specific to agriculture, **capital** is specific to manufacturing, and **labor** is mobile between the two sectors."
+
+  - type: discrimination
+    q: "How does the production technology in the specific-factors model differ from the Ricardian model?"
+    a: "Each industry has **diminishing returns to labor** (MPL falls as labor rises, and depends on the fixed factor), whereas the Ricardian model has **constant** returns."
+
+  - type: why
+    q: "Why is the PPF **bowed out** (concave) in the specific-factors model, unlike the Ricardian straight line?"
+    a: "Because of **diminishing marginal returns to labor** in each sector: moving labor toward one sector raises that good's output at a decreasing rate, so the opportunity cost rises along the frontier."
+
+  - type: notation
+    q: "State the labor-market equilibrium condition in the specific-factors model with manufacturing and agriculture."
+    a: "$w = P_M \\cdot MPL_M = P_A \\cdot MPL_A$ — firms in both sectors hire until the wage equals the value of the marginal product, and mobility equalizes the wage across sectors."
+
+  - type: why
+    q: "When trade raises $P_M$ (with $P_A$ fixed), what happens to the allocation of labor and to the nominal wage?"
+    a: "The $P_M \\cdot MPL_M$ curve shifts up, so **labor moves into manufacturing** and out of agriculture; the wage **rises, but by less** than the proportional increase in $P_M$."
+
+  - type: calculation
+    skill: "Deduce the real-wage effects of a goods-price change in the specific-factors model"
+    variants:
+      - q: "Trade raises the manufacturing price $P_M$ by $10\\%$ ($P_A$ fixed) and the wage rises by about $5\\%$. What happens to the real wage in terms of each good, and to worker welfare?"
+        a: "$w/P_M$ **falls** (5% < 10%) while $w/P_A$ **rises** (5% > 0%), so the effect on worker welfare is **ambiguous** — it depends on how much workers consume of each good."
+      - q: "Trade raises the agricultural price $P_A$ by $20\\%$ ($P_M$ fixed) and the wage rises by about $8\\%$. What happens to the real wage in terms of each good, and to worker welfare?"
+        a: "$w/P_A$ **falls** (8% < 20%) while $w/P_M$ **rises** (8% > 0%), so worker welfare is **ambiguous** — it depends on the consumption basket."
+      - q: "In the specific-factors model a price increase in one sector raises the wage less than proportionally. Why does that make the welfare effect on workers ambiguous?"
+        a: "The real wage **falls in terms of the more expensive good** but **rises in terms of the other good**; whether workers gain depends on how much of each good they consume."
+
+  - type: discrimination
+    q: "How does the effect of trade on workers differ between the Ricardian and the specific-factors model?"
+    a: "In the Ricardian model labor **unambiguously** earns a higher real wage from trade; in the specific-factors model the real-wage effect is **ambiguous** — no unqualified statement about workers' welfare is possible."
+
+  - type: calculation
+    q: "Holding goods prices constant, the supply of capital increases. What happens to the wage and to workers' welfare?"
+    a: "$MPL_M$ rises (each worker has more machines), so the $P_M \\cdot MPL_M$ curve shifts up and the wage **rises with prices unchanged** — workers are unambiguously **better off**."
+
+  - type: definition
+    q: "In the specific-factors model, how are the payments to capital and to land determined?"
+    a: "As the **residual revenue after labor costs**: payments to capital $= P_M Q_M - w L_M$ and payments to land $= P_A Q_A - w L_A$."
+
+  - type: why
+    q: "Trade raises $P_M$. Why does the **real rental on capital rise** and the **real rental on land fall**?"
+    a: "Labor moves into manufacturing, so each machine has more labor ($MPK$ rises) while each unit of land has less labor ($MP_{Land}$ falls); the capital rental rises even **more than proportionally** to $P_M$."
+
+  - type: why
+    q: "State the general distributional conclusion of the specific-factors model for opening to trade."
+    a: "The specific factor in the **export** industry gains (its output's relative price rises), the specific factor in the **import-competing** industry loses, and the effect on **mobile labor is ambiguous**."
+
+  - type: definition
+    q: "What is the US *Trade Adjustment Assistance (TAA)* program, and who is eligible?"
+    a: "Additional unemployment-insurance payments and health insurance for workers **laid off because of import competition** who are **enrolled in a retraining program** (extended to services and farmers in 2009)."
+
+  - type: calculation
+    q: "Use the specific-factors model for an energy-price increase: who gains, who loses, and for whom is the effect ambiguous?"
+    a: "Specific factors in **energy production gain** (e.g. owners of extraction capital); specific factors in **all other sectors lose**; **mobile factors are ambiguous**, depending on how much of their spending goes to energy."
