@@ -1,11 +1,14 @@
 # Review prompts for Lecture 2 - Ricardian Model
 # Source: "Lecture 2 - Ricardo.pptx" (HA International Trade, fall 2026)
 #
-# Schema (v0, see issue #1):
+# Schema (v1, see issues #1 and #3):
 #   lecture: lecture number
 #   title:   lecture title shown on the review page
 #   color:   orbit-reviewarea accent color
-#   prompts: list of {q, a}; Markdown and $...$ / $$...$$ LaTeX are supported.
+#   prompts: list of {q, a [, type]} fixed cards, or
+#            {skill, variants: [{q, a}, ...] [, type]} variant cards --
+#            one FSRS card per skill, a random variant shown at each review.
+#   Markdown and $...$ / $$...$$ LaTeX are supported.
 
 lecture: 2
 title: "Lecture 2 — The Ricardian Model"
@@ -30,8 +33,15 @@ prompts:
   - q: "Derive the autarky relative price of wheat from wage equalization across industries."
     a: "$w = P_W \\, MPL_W = P_C \\, MPL_C \\;\\Rightarrow\\; P_W/P_C = MPL_C/MPL_W$ — the opportunity cost of wheat, i.e. the slope of the PPF."
 
-  - q: "Home: $MPL_W = 4$, $MPL_C = 2$. Foreign: $MPL_W^* = 1$, $MPL_C^* = 1$. Which country has the comparative advantage in wheat, and why?"
-    a: "Home: its opportunity cost of wheat is $1/2$ yard of cloth versus $1$ in Foreign — even though Home has an *absolute* advantage in **both** goods."
+  - type: calculation
+    skill: "Determine comparative advantage from MPLs"
+    variants:
+      - q: "Home: $MPL_W = 4$, $MPL_C = 2$. Foreign: $MPL_W^* = 1$, $MPL_C^* = 1$. Which country has the comparative advantage in wheat, and why?"
+        a: "Home: its opportunity cost of wheat is $1/2$ yard of cloth versus $1$ in Foreign — even though Home has an *absolute* advantage in **both** goods."
+      - q: "Country A: $MPL_X = 6$, $MPL_Y = 2$. Country B: $MPL_X = 3$, $MPL_Y = 3$. Which country has the comparative advantage in good $X$, and why?"
+        a: "Country A: its opportunity cost of $X$ is $MPL_Y/MPL_X = 1/3$ unit of $Y$ versus $1$ in Country B."
+      - q: "Home: $MPL_W = 2$, $MPL_C = 6$. Foreign: $MPL_W^* = 1$, $MPL_C^* = 1$. Which country has the comparative advantage in wheat, and why?"
+        a: "Foreign: Home's opportunity cost of wheat is $MPL_C/MPL_W = 3$ yards of cloth versus $1$ in Foreign — so Home's comparative advantage is in **cloth**."
 
   - q: "Between which bounds must the free-trade relative price of wheat lie?"
     a: "Between the two autarky relative prices. In our example: $1/2 \\le P_W/P_C \\le 1$."
@@ -39,8 +49,15 @@ prompts:
   - q: "What are the two lessons of the Ricardian model?"
     a: "1. The pattern of trade is determined by **comparative advantage**. 2. There are **gains from trade** for both countries."
 
-  - q: "Under trade with $P_W/P_C = 2/3$ and $MPL_W = 4$, what is the Home real wage in terms of cloth? Compare it with autarky."
-    a: "$(P_W/P_C) \\times MPL_W = (2/3) \\times 4 = 8/3$ yards of cloth — higher than the autarky real wage of $MPL_C = 2$ yards, so workers gain from trade."
+  - type: calculation
+    skill: "Compute the real wage of the exporting country's workers under trade and compare with autarky"
+    variants:
+      - q: "Under trade with $P_W/P_C = 2/3$ and $MPL_W = 4$, what is the Home real wage in terms of cloth? Compare it with autarky (where $MPL_C = 2$)."
+        a: "$(P_W/P_C) \\times MPL_W = (2/3) \\times 4 = 8/3$ yards of cloth — higher than the autarky real wage of $MPL_C = 2$ yards, so workers gain from trade."
+      - q: "Home exports wheat. Under trade with $P_W/P_C = 3/4$ and $MPL_W = 8$, what is the Home real wage in terms of cloth? Compare it with autarky (where $MPL_C = 4$)."
+        a: "$(P_W/P_C) \\times MPL_W = (3/4) \\times 8 = 6$ yards of cloth — higher than the autarky real wage of $MPL_C = 4$ yards, so workers gain from trade."
+      - q: "Home exports wheat. Under trade with $P_W/P_C = 3/5$ and $MPL_W = 5$, what is the Home real wage in terms of cloth? Compare it with autarky (where $MPL_C = 2$)."
+        a: "$(P_W/P_C) \\times MPL_W = (3/5) \\times 5 = 3$ yards of cloth — higher than the autarky real wage of $MPL_C = 2$ yards, so workers gain from trade."
 
   - q: "Define the *terms of trade*."
     a: "The price of a country's exports divided by the price of its imports. For Home, which exports wheat: $P_W/P_C$."
