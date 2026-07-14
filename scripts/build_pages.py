@@ -81,6 +81,9 @@ in your own browser; nothing is uploaded or graded.</p>
 &mdash; one session pooling the due cards from every lecture. Use this as the
 course progresses (and before the exam); the per-lecture pages below are for
 first-time review of a single lecture.</p>
+<p>A session takes about <strong>five minutes</strong>: at most 12 cards per
+visit, hardest-to-remember first, with a few new cards mixed in. Anything left
+over stays scheduled for next time (you can always keep going if you want).</p>
 <ul>
 {items}
 </ul>

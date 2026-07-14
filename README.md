@@ -56,6 +56,11 @@ python3 scripts/build_pages.py
 - Cards graded *Again* return within the session; when nothing is due the page
   shows the next due date (students are nudged to revisit via scheduled LMS
   announcements).
+- Sessions are budgeted to roughly five minutes: at most `SESSION_CAP` (12)
+  cards per visit, due cards triaged by FSRS retrievability (closest to
+  forgotten first), and at most `NEW_PER_SESSION` (5) first-time cards dripped
+  in per session. Leftover cards stay due (FSRS tolerates lateness); the
+  end-of-session screen offers "Continue reviewing" for catch-up.
 - `docs/all.html` pools the due cards of every lecture into one session
   (issue #3, extension 4). Card ids are identical across pages, so progress
   made on a lecture page counts on the pooled page and vice versa.
